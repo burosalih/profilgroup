@@ -2,6 +2,7 @@ import Link from "next/link";
 import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
 import { useState, useEffect, useRef } from "react";
+import Image from "next/image";
 
 export default function Navbar() {
   const { t, i18n } = useTranslation("common");
@@ -42,15 +43,17 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="bg-white shadow-md sticky top-0 z-50">
+<nav style={{ position: 'sticky', top: 0, zIndex: 50 }} className="bg-white shadow-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Left: Logo */}
           <Link href={"/"}>
           <div className="flex-shrink-0">
-            <img
+            <Image
               src="/logo.png"
               alt="ProfilGroup"
+              width={250}
+              height={50}
               className="h-10 md:h-12 w-auto object-contain"
             />
           </div>
@@ -143,13 +146,7 @@ export default function Navbar() {
 
           {/* Mobile menu button */}
           <div className="md:hidden flex items-center gap-2">
-            <button
-              onClick={() => setShowLangDropdown(!showLangDropdown)}
-              className="text-xl text-slate-700"
-              aria-label="Toggle language menu"
-            >
-              {languages.find((lang) => lang.code === i18n.language)?.flag}
-            </button>
+            
 
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}

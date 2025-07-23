@@ -5,8 +5,9 @@ import { GetStaticProps } from 'next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import Footer from '@/components/Footer';
 import Head from 'next/head';
+import Image from 'next/image';
 
-const nextI18NextConfig = require('../../next-i18next.config.js');
+import nextI18NextConfig from '../../next-i18next.config.js';
 
 export default function AboutPage() {
   const { t } = useTranslation('common')
@@ -15,9 +16,9 @@ export default function AboutPage() {
     <>
     <Head>
         <title>{t('about_title')} | ProfilGroup</title>
-        <meta name="description" content={t('about_meta_description', 'Learn more about ProfilGroup, our services, materials, and philosophy.')} />
+        <meta name="description" content={t('about_meta_description')} />
         <meta property="og:title" content={t('about_title')} />
-        <meta property="og:description" content={t('about_meta_description', 'Learn more about ProfilGroup, our services, materials, and philosophy.')} />
+        <meta property="og:description" content={t('about_meta_description')} />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="/logowhite.png" />
         <meta property="og:url" content="https://yourdomain.com/about" />
@@ -41,7 +42,7 @@ export default function AboutPage() {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="mt-6 flex justify-center"
           >
-            <img src="/logowhite.png" alt="ProfilGroup Logo" className="h-20 md:h-24" />
+            <Image src="/logowhite.png" alt="ProfilGroup Logo" width={600} height={250} className="h-12 md:h-24 scale-90 md:scale-100" />
           </motion.div>
         </div>
 
