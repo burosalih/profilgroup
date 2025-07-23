@@ -1,115 +1,141 @@
-import Image from "next/image";
-import { Geist, Geist_Mono } from "next/font/google";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { useTranslation } from 'next-i18next'
+import Navbar from '@/components/Navbar'
+import { GetStaticProps } from 'next'
+import Image from 'next/image'
+const nextI18NextConfig = require('../../next-i18next.config.js');
+import FeatureImage from '@/components/FeatureImage'
+import Footer from '@/components/Footer'
+import Link from 'next/link'
 export default function Home() {
+  const { t } = useTranslation('common')
+
   return (
-    <div
-      className={`${geistSans.className} ${geistMono.className} font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20`}
-    >
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/pages/index.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <>
+      <Navbar />
+      <main>
+        {/* HERO SECTION */}
+        <section className="relative h-[70vh] bg-gradient-to-br from-neutral-700 to-neutral-900 text-white flex items-center justify-center px-4">
+          <div className="text-center max-w-3xl">
+            <h1 className="text-5xl md:text-6xl font-extrabold mb-6 font-exo">
+              {t('hero_title')}
+            </h1>
+            <p className="text-lg md:text-xl mb-8 font-light">
+              {t('hero_subtitle')}
+            </p>
+            <Link href="/about">
+  <button className="bg-white text-lime-700 font-semibold px-6 py-3 rounded-full hover:bg-lime-100 transition">
+    {t('learn_more')}
+  </button>
+</Link>
+          </div>
+        </section>
+         {/* ABOUT SECTION */}
+        <section className="bg-gray-50 py-18 px-6">
+          <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+            <div>
+              <h2 className="text-4xl font-bold mb-4 text-gray-800">{t('why_us')}</h2>
+              <hr className="w-48 h-1 my-4 border-0 rounded-sm md:my-5 bg-profil">
+              </hr>
+              <p className="text-gray-700 text-lg mb-8 leading-relaxed font-sans">
+                {t('why_us_desc_extended')}
+              </p>
+              <ul className="space-y-4 text-gray-800 list-disc list-inside font-sans">
+                <li>{t('benefit_1')}</li>
+                <li>{t('benefit_2')}</li>
+                <li>{t('benefit_3')}</li>
+              </ul>
+            </div>
+            <div className="w-full h-full relative rounded-xl overflow-hidden shadow-2xl">
+              <Image
+                src="/placeholder-machine.jpg"
+                alt="ProfilGroup machines"
+                layout="fill"
+                objectFit="cover"
+              />
+            </div>
+          </div>
+        </section>
+
+<section className="w-full h-[600px] bg-black text-white overflow-hidden">
+  {/* Grid (desktop) */}
+  <div className="hidden md:grid grid-cols-4 grid-rows-2 w-full h-full">
+    <FeatureImage
+      src="/feature1.jpg"
+      title={t('cnc_title')}
+      description={t('cnc_desc')}
+      className="col-span-2 row-span-2"
+    />
+    <FeatureImage
+      src="/feature2.jpg"
+      title={t('support_title')}
+      description={t('support_desc')}
+      className="row-span-1 col-span-2"
+    />
+    <FeatureImage
+      src="/feature3.jpg"
+      title={t('consulting_title')}
+      description={t('consulting_desc')}
+      className="row-span-1 col-span-2"
+    />
+  </div>
+
+  {/* Mobile (stacked cards) */}
+  <div className="md:hidden w-full h-full flex flex-col">
+    <FeatureImage src="/feature1.jpg" title={t('cnc_title')} description={t('cnc_desc')} className="flex-1" />
+    <FeatureImage src="/feature2.jpg" title={t('support_title')} description={t('support_desc')} className="flex-1" />
+    <FeatureImage src="/feature3.jpg" title={t('consulting_title')} description={t('consulting_desc')} className="flex-1" />
+  </div>
+</section>
+<section className="bg-white py-24 px-4">
+  <div className="max-w-[100rem] mx-auto text-center">
+    <h2 className="text-4xl font-bold text-gray-800">{t('steps_title')}</h2>
+    <hr className="w-32 h-1 my-6 mx-auto border-0 rounded-sm bg-profil" />
+    <p className="text-gray-600 mb-12 text-lg">{t('steps_intro')}</p>
+
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-4 text-left">
+      {[1, 2, 3, 4, 5, 6].map((step) => (
+        <div key={step} className="py-8 px-4 rounded-xl bg-neutral-50 hover:shadow-xl transition flex flex-col items-center text-center">
+          <div className="flex items-center gap-2 mb-4">
+            <span className="text-3xl font-extrabold text-profil">{`${step}.`}</span>
+            <h3 className="text-base font-semibold text-neutral-600 text-nowrap">{t(`step_${step}_title`)}</h3>
+          </div>
+          <img src={`/placeholder-machine.jpg`} alt={`Step ${step}`} className="h-32 object-contain mb-4" />
+          <p className="text-gray-700 text-sm">{t(`step_${step}_desc`)}</p>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      ))}
     </div>
-  );
+  </div>
+</section>
+
+{/* OUR PARTNERS SECTION */}
+<section className="bg-neutral-800 py-20 px-4">
+  <div className="max-w-6xl mx-auto text-center">
+    <h2 className="text-4xl font-bold mb-6 text-gray-100">{t('our_partners_title')}</h2>
+      <hr className="w-48 h-1 mb-4 mx-auto border-0 rounded-sm md:mb-6 bg-profil"></hr>
+    <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-4 gap-6 items-center justify-items-center">
+      <Image src="/partners/homag.png" alt="Partner 1" width={120} height={60} />
+      <Image src="/partners/kronospan.png" alt="Partner 2" width={120} height={60} />
+      <Image src="/partners/egger.png" alt="Partner 3" width={120} height={60} />
+      <Image src="/partners/gtv.png" alt="Partner 4" width={120} height={60} />
+      <Image src="/partners/kaindl.png" alt="Partner 5" width={120} height={60} />
+      <Image src="/partners/blum.png" alt="Partner 6" width={120} height={60} />
+      <Image src="/partners/metalac.png" alt="Partner 7" width={120} height={60} />
+      <Image src="/partners/kastamonu.png" alt="Partner 8" width={120} height={60} />
+    </div>
+  </div>
+</section>
+
+      </main>
+      <Footer />
+    </>
+  )
+}
+
+export const getStaticProps: GetStaticProps = async ({ locale }) => {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale ?? 'bs', ['common'], nextI18NextConfig)),
+    },
+  }
 }
