@@ -4,6 +4,7 @@ import { useTranslation } from 'next-i18next'
 import { GetStaticProps } from 'next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import Footer from '@/components/Footer';
+import Head from 'next/head';
 
 const nextI18NextConfig = require('../../next-i18next.config.js');
 
@@ -12,6 +13,16 @@ export default function AboutPage() {
 
   return (
     <>
+    <Head>
+        <title>{t('about_title')} | ProfilGroup</title>
+        <meta name="description" content={t('about_meta_description', 'Learn more about ProfilGroup, our services, materials, and philosophy.')} />
+        <meta property="og:title" content={t('about_title')} />
+        <meta property="og:description" content={t('about_meta_description', 'Learn more about ProfilGroup, our services, materials, and philosophy.')} />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="/logowhite.png" />
+        <meta property="og:url" content="https://yourdomain.com/about" />
+        <link rel="canonical" href="https://yourdomain.com/about" />
+      </Head>
       <Navbar />
       <main className="bg-neutral-800 text-white px-6 md:px-16 py-12 font-sans">
         {/* Title with logo */}

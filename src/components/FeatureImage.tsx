@@ -22,9 +22,10 @@ export default function FeatureImage({ src, title, description, className = '' }
         <h3 className="text-3xl md:text-5xl font-extrabold text-white z-10 text-center px-4 group-hover:text-profil transition-colors duration-600">
           {title}
         </h3>
-        <h2 className='text-lg md:text-xl font-bold text-white z-10 text-center mt-2 px-4'>
-          {description}
-        </h2>
+        <h2 className="text-md md:text-lg font-bold text-white z-10 text-center mt-2 px-8 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+  {description}
+</h2>
+
       </div>
     </div>
   )

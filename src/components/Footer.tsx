@@ -7,12 +7,8 @@ export default function Footer() {
   return (
     <footer className="bg-neutral-900 text-white text-sm px-6 py-8 border-t-1 border-profil">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center md:items-start gap-6 md:gap-0">
-
-        {/* Left side: Company + slogan */}
         <div className="text-center md:text-left max-w-sm">
-          <div className="text-lg font-extrabold text-white mb-2 cursor-default select-none">
-            ProfilGroup
-          </div>
+          <img src="/logowhite.png" alt="ProfilGroup Logo" className="h-12 mb-4 mx-auto md:mx-0" />
           <p className="italic text-gray-400 mb-4">{t("footer.slogan")}</p>
 
           <div className="space-y-1 text-gray-400">

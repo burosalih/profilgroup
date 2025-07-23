@@ -7,16 +7,33 @@ const nextI18NextConfig = require('../../next-i18next.config.js');
 import FeatureImage from '@/components/FeatureImage'
 import Footer from '@/components/Footer'
 import Link from 'next/link'
+import Head from 'next/head'
 export default function Home() {
   const { t } = useTranslation('common')
 
   return (
     <>
+    <Head>
+        <title>{t('home_title', 'ProfilGroup')}</title>
+        <meta
+          name="description"
+          content={t('home_meta_description', 'ProfilGroup')}
+        />
+        <meta property="og:title" content={t('home_title', 'ProfilGroup')} />
+        <meta
+          property="og:description"
+          content={t('home_meta_description', 'ProfilGroup')}
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="/logo.png" />
+        <meta property="og:url" content="https://yourdomain.com/" />
+        <link rel="canonical" href="https://yourdomain.com/" />
+      </Head>
       <Navbar />
       <main>
         {/* HERO SECTION */}
         <section className="relative h-[70vh] bg-gradient-to-br from-neutral-700 to-neutral-900 text-white flex items-center justify-center px-4">
-          <div className="text-center max-w-3xl">
+          <div className="text-center max-w-4xl">
             <h1 className="text-5xl md:text-6xl font-extrabold mb-6 font-exo">
               {t('hero_title')}
             </h1>
@@ -46,14 +63,19 @@ export default function Home() {
                 <li>{t('benefit_3')}</li>
               </ul>
             </div>
-            <div className="w-full h-full relative rounded-xl overflow-hidden shadow-2xl">
-              <Image
-                src="/placeholder-machine.jpg"
-                alt="ProfilGroup machines"
-                layout="fill"
-                objectFit="cover"
-              />
-            </div>
+            <div className="relative rounded-2xl overflow-hidden shadow-xl aspect-video md:aspect-[4/3]">
+  <Image
+    src="/placeholder-machine.jpg"
+    alt="ProfilGroup machines"
+    fill
+    className="object-cover grayscale"
+  />
+  <div
+    className="absolute inset-0 bg-gradient-to-br from-profil/70 via-transparent to-neutral-900 pointer-events-none"
+  />
+</div>
+
+
           </div>
         </section>
 

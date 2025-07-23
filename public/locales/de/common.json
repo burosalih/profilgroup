@@ -1,5 +1,7 @@
 {
   "home": "Startseite",
+  "home_title": "ProfilGroup",
+  "home_meta_description": "ProfilGroup ist ein spezialisiertes Zentrum für das Zuschneiden und Kanten von Plattenmaterialien. Präzision, Geschwindigkeit und Qualität an einem Ort.",
   "about": "Über uns",
   "contact": "Kontakt",
   "contact_info": {
@@ -7,28 +9,32 @@
     "phone": "+387 62 871 860",
     "email": "profil.ze@gmail.com"
   },
-  "hero_title": "Professionelle Lösungen für Industriesysteme",
-  "hero_subtitle": "Wählen Sie ProfilGroup – Ihr Partner für präzise und zuverlässige Maschinen.",
+  "hero_title": "Zuverlässiger Partner für Plattenbearbeitung",
+  "hero_subtitle": "Wählen Sie ProfilGroup – Präzision, Schnelligkeit und Qualität an einem Ort.",
   "learn_more": "Mehr erfahren",
-  "our_services": "Unsere Dienstleistungen",
-  "cnc_title": "CNC-Maschinen",
-  "cnc_desc": "Spezialisiert auf Maschinen zur Holz- und Metallverarbeitung.",
-  "cnc_desc_extended": "Unsere CNC-Maschinen ermöglichen eine präzise Bearbeitung verschiedener Materialien und bieten Effizienz und Qualität für Ihre industriellen Anforderungen.",
-  "support_title": "Technischer Support",
-  "support_desc": "Unser Team ist bereit für schnelle Eingriffe und Wartungen.",
-  "support_desc_extended": "Wir bieten professionellen 24/7-Technischen Support, um Ausfallzeiten zu minimieren und die Produktivität Ihrer Maschinen zu maximieren.",
-  "consulting_title": "Beratung",
-  "consulting_desc": "Wir helfen Ihnen, die besten Lösungen für Ihr Unternehmen auszuwählen.",
-  "consulting_desc_extended": "Unsere Experten helfen Ihnen, optimale industrielle Lösungen auszuwählen, um Ihr Geschäft zu verbessern und die Wettbewerbsfähigkeit zu steigern.",
-  "why_us": "Warum uns wählen?",
-  "why_us_desc": "ProfilGroup ist ein führender Hersteller von Kantenanleim- und Plattenteilmaschinen. Mit über 15 Jahren Erfahrung bieten wir maßgeschneiderte Lösungen für Ihre Bedürfnisse.",
-  "why_us_desc_extended": "ProfilGroup ist ein führender Hersteller von Kantenanleim- und Plattenteilmaschinen in der Region. Mit über 15 Jahren Erfahrung bietet unser Team innovative und zuverlässige Lösungen, die auf die spezifischen Bedürfnisse jedes Kunden zugeschnitten sind. Wir legen Wert auf Qualität, Effizienz und exzellenten Support, um Ihnen zu helfen, Ihre Geschäftsziele zu erreichen.",
-  "benefit_1": "Erstklassige Handwerkskunst",
-  "benefit_2": "Schnelle Lieferung und Montage",
-  "benefit_3": "Kundendienst",
+  "our_services": "Unsere Leistungen",
+
+  "cnc_title": "Produktion",
+  "cnc_desc": "Der Kunde liefert die Maße und wählt das Material – wir liefern präzise gefertigte Bauteile, montagebereit. Unser Zuschnittzentrum garantiert Schnelligkeit und Genauigkeit in jeder Bearbeitungsphase.",
+
+  "support_title": "Materialien",
+  "support_desc": "Wir bieten eine große Auswahl an Spanplatten, MDF, Acryl, Arbeitsplatten und Beschlägen. Alles, was Sie für die Möbelherstellung benötigen – an einem Ort.",
+
+  "consulting_title": "Bestellprozess",
+  "consulting_desc": "Von der Maßangabe bis zum fertigen Produkt – ein vereinfachter und effizienter Bestellprozess mit Unterstützung unseres Fachpersonals.",
+
+  "why_us": "Warum wir?",
+  "why_us_desc": "ProfilGroup ist ein führendes Zuschnittzentrum, spezialisiert auf die Bearbeitung von Spanplatten, MDF und anderen Materialien. Mit über 15 Jahren Erfahrung bieten wir professionelle Dienstleistungen für Tischler, Designer und Möbelhersteller.",
+
+  "why_us_desc_extended": "ProfilGroup ist Ihr zuverlässiger Partner für alle Bedürfnisse im Bereich Zuschnitt und Kantenbearbeitung. Unsere Ausstattung, Fachkenntnis und Liebe zum Detail ermöglichen höchste Qualität, schnelle Ausführung und umfassende Unterstützung während des gesamten Produktionsprozesses. Ob Einzeltischler oder Großhersteller – bei uns sind Sie in guten Händen.",
+
+  "benefit_1": "Höchste Präzision und Verarbeitungsgenauigkeit",
+  "benefit_2": "Kurze Fertigungszeiten und Flexibilität",
+  "benefit_3": "Freundlicher Support und kompetente Beratung",
   "our_partners_title": "Unsere Partner",
   "language": "Sprache",
   "about_title": "Über uns",
+    "about_meta_description": "Erfahren Sie mehr über ProfilGroup, unsere Dienstleistungen, Materialien und Philosophie.",
   "about_who_we_are_title": "Wer wir sind",
   "about_who_we_are_desc": "ProfilGroup ist ein modernes Zuschneidezentrum, das sich auf die Erstellung von Zuschnittlisten, das präzise Schneiden von Plattenmaterialien und professionelles Kantenleimen spezialisiert hat. Unser Team vereint Erfahrung, moderne Technologie und Präzision, um jedem Kunden hochwertige Ergebnisse zu liefern.",
   

@@ -1,5 +1,7 @@
 {
   "home": "Home",
+  "home_title": "ProfilGroup",
+  "home_meta_description": "ProfilGroup is a specialized center for cutting and edging panel materials. Precision, speed, and quality in one place.",
   "about": "About",
   "contact": "Contact",
   "contact_info": {
@@ -7,28 +9,32 @@
     "phone": "+387 62 871 860",
     "email": "profil.ze@gmail.com"
   },
-  "hero_title": "Professional Solutions for Industrial Systems",
-  "hero_subtitle": "Choose ProfilGroup – Your Partner for Precise and Reliable Machines.",
+  "hero_title": "Reliable Partner in Panel Processing",
+  "hero_subtitle": "Choose ProfilGroup – Precision, speed, and quality in one place.",
   "learn_more": "Learn More",
   "our_services": "Our Services",
-  "cnc_title": "CNC Machines",
-  "cnc_desc": "Specialized in wood and metal processing machines.",
-  "cnc_desc_extended": "Our CNC machines enable precise processing of various materials, providing efficiency and quality for your industrial needs.",
-  "support_title": "Technical Support",
-  "support_desc": "Our team is ready for quick interventions and maintenance.",
-  "support_desc_extended": "We provide professional 24/7 technical support, ensuring minimal downtime and maximum productivity of your machines.",
-  "consulting_title": "Consulting",
-  "consulting_desc": "We help you choose the best solutions for your business.",
-  "consulting_desc_extended": "Our experts will help you select optimal industrial solutions to improve your business and increase competitiveness.",
+
+  "cnc_title": "Production",
+  "cnc_desc": "The customer provides the measurements and selects the material, and we deliver precisely crafted components ready for assembly. Our cutting center ensures speed and accuracy at every stage of processing.",
+
+  "support_title": "Materials",
+  "support_desc": "We offer a wide range of chipboard, MDF, acrylics, worktops, and fittings. Everything you need for furniture production – in one place.",
+
+  "consulting_title": "Ordering Process",
+  "consulting_desc": "From defining dimensions to the final product – a streamlined and efficient ordering process with the support of our expert team.",
+
   "why_us": "Why Choose Us?",
-  "why_us_desc": "ProfilGroup is a leading manufacturer of edge banding and panel dividing machines. With over 15 years of experience, we offer solutions tailored to your needs.",
-  "why_us_desc_extended": "ProfilGroup is a leading manufacturer of edge banding and panel dividing machines in the region. With over 15 years of experience, our team offers innovative and reliable solutions tailored to the specific needs of each client. We focus on quality, efficiency, and excellent support to help you achieve your business goals.",
-  "benefit_1": "Top-quality craftsmanship",
-  "benefit_2": "Fast delivery and installation",
-  "benefit_3": "After-sales support",
+  "why_us_desc": "ProfilGroup is a leading cutting center specialized in processing chipboard, MDF, and other materials. With over 15 years of experience, we offer professional services tailored to the needs of carpenters, designers, and furniture manufacturers.",
+
+  "why_us_desc_extended": "ProfilGroup is a trusted partner for all your cutting and edgebanding needs. Our equipment, expertise, and attention to detail allow us to provide high quality, fast turnaround, and support throughout the production process. Whether you're an individual carpenter or a large-scale manufacturer, you're in good hands with us.",
+
+  "benefit_1": "High precision and processing accuracy",
+  "benefit_2": "Fast production times and flexibility",
+  "benefit_3": "Friendly support and expert advice",
   "our_partners_title": "Our Partners",
   "language": "Language",
   "about_title": "About Us",
+    "about_meta_description": "Learn more about ProfilGroup, our services, materials, and philosophy.",
   "about_who_we_are_title": "Who We Are",
   "about_who_we_are_desc": "ProfilGroup is a modern cutting center specialized in creating cutting lists, precise panel cutting, and professional edge banding. Our team combines experience, modern technology, and precision to deliver high-quality results to every client.",
   
