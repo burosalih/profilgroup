@@ -165,13 +165,13 @@ export default function Home() {
             <span className="text-3xl font-extrabold text-profil">{`${step}.`}</span>
             <h3 className="text-base font-semibold text-neutral-600 text-nowrap">{t(`step_${step}_title`)}</h3>
           </div>
-<Image
+{/*<Image
   src={`/placeholder-machine.jpg`}
   alt={`Step ${step}`}
   width={128}
   height={128}
   className="h-32 object-contain mb-4"
-/>
+/>*/}
           <p className="text-gray-700 text-sm">{t(`step_${step}_desc`)}</p>
         </div>
       ))}
