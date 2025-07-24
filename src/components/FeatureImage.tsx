@@ -68,7 +68,7 @@ export default function FeatureImage({
   className={`
     text-3xl md:text-5xl font-extrabold z-10
     transition-all duration-500 ease-in-out
-    ${isMobile ? (isActive ? '-translate-y-15 text-profil' : 'translate-y-0 text-white') : 'group-hover:-translate-y-20 group-hover:text-profil text-white'}
+    ${isMobile ? (isActive ? '-translate-y-15 text-profil' : 'translate-y-0') : 'group-hover:-translate-y-20 group-hover:text-profil text-white'}
   `}
 >
   {title}
