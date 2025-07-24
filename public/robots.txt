@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://profilgroup.ba
+
+# Sitemaps
+Sitemap: https://profilgroup.ba/sitemap.xml

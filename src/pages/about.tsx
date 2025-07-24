@@ -21,8 +21,8 @@ export default function AboutPage() {
         <meta property="og:description" content={t('about_meta_description')} />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="/logowhite.png" />
-        <meta property="og:url" content="https://yourdomain.com/about" />
-        <link rel="canonical" href="https://yourdomain.com/about" />
+        <meta property="og:url" content="https://profilgroup.ba/about" />
+        <link rel="canonical" href="https://profilgroup.ba/about" />
       </Head>
       <Navbar />
       <main className="bg-neutral-800 text-white px-6 md:px-16 py-12 font-sans">
@@ -42,7 +42,7 @@ export default function AboutPage() {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="mt-6 flex justify-center"
           >
-            <Image src="/logowhite.png" alt="ProfilGroup Logo" width={600} height={250} className="h-12 md:h-24 scale-90 md:scale-100" />
+            <Image src="/logowhite.png" alt="ProfilGroup Logo" width={650} height={250} className="h-12 md:h-24 scale-90 md:scale-100" />
           </motion.div>
         </div>
 

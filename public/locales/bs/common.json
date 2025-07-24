@@ -1,7 +1,7 @@
 {
   "home": "Početna",
-  "home_title": "ProfilGroup",
-  "home_meta_description": "ProfilGroup je specijalizovani centar za rezanje i kantovanje pločastih materijala. Preciznost, brzina i kvalitet na jednom mjestu.",
+  "home_title": "Profil Group",
+  "home_meta_description": "Profil Group je specijalizovani centar za rezanje i kantovanje pločastih materijala. Preciznost, brzina i kvalitet na jednom mjestu.",
   "about": "O nama",
   "contact": "Kontakt",
   "contact_info": {
@@ -10,7 +10,7 @@
     "email": "profil.ze@gmail.com"
   },
    "hero_title": "Pouzdani partner u obradi pločastih materijala",
-  "hero_subtitle": "Odaberite ProfilGroup – Preciznost, brzina i kvalitet na jednom mjestu.",
+  "hero_subtitle": "Odaberite Profil Group – Preciznost, brzina i kvalitet na jednom mjestu.",
   "learn_more": "Saznajte Više",
   "our_services": "Naše Usluge",
 
@@ -23,8 +23,8 @@
   "consulting_title": "Proces Naručivanja",
   "consulting_desc": "Od definisanja dimenzija do gotovog proizvoda – pojednostavljen i efikasan proces naručivanja uz podršku našeg stručnog tima.",
   "why_us": "Zašto izabrati nas?",
-  "why_us_desc": "ProfilGroup je vodeći rezni centar specijalizovan za obradu iverice, MDF-a i drugih materijala. Sa preko 15 godina iskustva nudimo profesionalne usluge prilagođene potrebama stolara, dizajnera i proizvođača namještaja.",
-  "why_us_desc_extended": "ProfilGroup je pouzdan partner za sve vaše potrebe rezanja i kantovanja pločastih materijala. Naša oprema, stručnost i posvećenost detaljima omogućavaju nam da pružimo visok kvalitet, brzo izvođenje radova i podršku tokom cijelog procesa proizvodnje. Bilo da ste individualni stolar ili veliki proizvođač, kod nas ste u sigurnim rukama.",
+  "why_us_desc": "Profil Group je vodeći rezni centar specijalizovan za obradu iverice, MDF-a i drugih materijala. Sa preko 15 godina iskustva nudimo profesionalne usluge prilagođene potrebama stolara, dizajnera i proizvođača namještaja.",
+  "why_us_desc_extended": "Profil Group je pouzdan partner za sve vaše potrebe rezanja i kantovanja pločastih materijala. Naša oprema, stručnost i posvećenost detaljima omogućavaju nam da pružimo visok kvalitet, brzo izvođenje radova i podršku tokom cijelog procesa proizvodnje. Bilo da ste individualni stolar ili veliki proizvođač, kod nas ste u sigurnim rukama.",
 
   "benefit_1": "Visoka preciznost i tačnost obrade",
   "benefit_2": "Brzi rokovi izrade i fleksibilnost",
@@ -32,12 +32,12 @@
   "our_partners_title": "Naši partneri",
   "language": "Jezik",
   "about_title": "O nama",
-    "about_meta_description": "Saznajte više o ProfilGroup, našim uslugama, materijalima i poslovnoj filozofiji.",
+    "about_meta_description": "Saznajte više o Profil Group, našim uslugama, materijalima i poslovnoj filozofiji.",
   "about_who_we_are_title": "Ko smo mi",
-  "about_who_we_are_desc": "ProfilGroup je savremeni rezni centar koji se specijalizira za izradu krojnih listi, precizno rezanje ploča po mjeri, te profesionalno kantovanje. Naš tim kombinuje iskustvo, savremenu tehnologiju i preciznost kako bismo isporučili visokokvalitetne rezultate svakom klijentu.",
+  "about_who_we_are_desc": "Profil Group je savremeni rezni centar koji se specijalizira za izradu krojnih listi, precizno rezanje ploča po mjeri, te kantiranje. Naš tim kombinuje iskustvo, savremenu tehnologiju i preciznost kako bismo isporučili visokokvalitetne rezultate svakom klijentu.",
   
   "about_services_title": "Naše usluge",
-  "about_services_desc": "• Izrada krojnih listi\n• CNC rezanje pločastih materijala\n• Kantovanje (ABS i melaminske trake)\n• Savjetovanje u odabiru materijala i okova\n• Priprema gotovih elemenata za montažu",
+  "about_services_desc": "• Izrada krojnih listi\n• CNC rezanje pločastih materijala\n• Kantiranje (ABS i melaminske trake)\n• Savjetovanje u odabiru materijala i okova\n• Priprema gotovih elemenata za montažu",
 
   "about_materials_title": "Materijali koje koristimo",
   "about_materials_desc": "U radu koristimo širok spektar kvalitetnih materijala: iverica, MDF, lesonit, radne ploče, akrili, zidne obloge, ABS trake, okovi, sudoperi i još mnogo toga. Svi materijali su pažljivo birani od provjerenih dobavljača.",
@@ -51,17 +51,17 @@
   "step_1_title": "Prijem narudžbe",
   "step_1_desc": "Klijent dostavlja nacrt ili zahtjev sa tačnim dimenzijama i vrstom materijala.",
   "step_2_title": "Izrada krojnih listi",
-  "step_2_desc": "Naši stručnjaci kreiraju optimizirane krojne liste za maksimalnu iskoristivost materijala.",
+  "step_2_desc": "Naše osoblje kreira optimizirane krojne liste za maksimalnu iskoristivost materijala.",
   "step_3_title": "Rezanje materijala",
   "step_3_desc": "Koristeći CNC pile, materijali se precizno režu prema zadanim dimenzijama.",
-  "step_4_title": "Kantovanje ivica",
+  "step_4_title": "Kantiranje",
   "step_4_desc": "Sve ivice se oblažu kvalitetnim ABS trakama za trajnost i estetiku.",
   "step_5_title": "Kontrola kvaliteta",
   "step_5_desc": "Svaki komad se provjerava kako bi zadovoljio visoke standarde kvaliteta.",
   "step_6_title": "Pakovanje i isporuka",
   "step_6_desc": "Finalni proizvodi se pažljivo pakuju i pripremaju za isporuku kupcu.",
   "footer": {
-    "copyright": "© 2025 ProfilGroup d.o.o. Sva prava zadržana.",
+    "copyright": "© 2025 Profil Group d.o.o. Sva prava zadržana.",
     "quick_links": "Brze veze",
     "follow_us": "Pratite nas",
     "slogan": "Preciznost i pouzdanost za Vaš uspjeh"

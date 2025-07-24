@@ -35,8 +35,8 @@ export default function Home() {
         />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="/logo.png" />
-        <meta property="og:url" content="https://yourdomain.com/" />
-        <link rel="canonical" href="https://yourdomain.com/" />
+        <meta property="og:url" content="https://profilgroup.ba/" />
+        <link rel="canonical" href="https://profilgroup.ba/" />
       </Head>
       <Navbar />
       <main>

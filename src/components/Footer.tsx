@@ -11,7 +11,7 @@ export default function Footer() {
 <Image
   src="/logowhite.png"
   alt="ProfilGroup Logo"
-  width={300}
+  width={350}
   height={50}
   className="h-12 mb-4 mx-auto md:mx-0"
 />
